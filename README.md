@@ -1,5 +1,5 @@
 # LTI 1.3 Advantage Demo Tool
-This code consists an example tool that utilize the library LTI 1.3 PHP library.
+This code consists an example tool that utilize the library LTI 1.3 PHP library.  It has been modified for a demonstration lab to show how Course Outlines may be retrieved by a Moodle User from the LTI Tool.
 
 # Running The Example Code
 
