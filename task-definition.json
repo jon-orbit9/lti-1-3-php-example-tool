@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:280785411786:task-definition/docker-task-lab:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:280785411786:task-definition/docker-task-lab:2",
     "containerDefinitions": [
         {
             "name": "lti-tool-lab",
-            "image": "280785411786.dkr.ecr.ap-southeast-2.amazonaws.com/lti-tool-repo-1",
+            "image": "280785411786.dkr.ecr.ap-southeast-2.amazonaws.com/lti-tool-repo-1:b11afd5feae1f7b8ab12633b2d17e30f0bcdbf91",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,7 +16,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "logConfiguration": {
@@ -33,7 +32,7 @@
     "family": "docker-task-lab",
     "executionRoleArn": "arn:aws:iam::280785411786:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -76,8 +75,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-01T22:07:29.740Z",
-    "registeredBy": "arn:aws:iam::280785411786:root",
+    "registeredAt": "2023-02-02T00:45:34.425Z",
+    "registeredBy": "arn:aws:iam::280785411786:user/operator",
     "tags": [
         {
             "key": "ecs:taskDefinition:createdFrom",
