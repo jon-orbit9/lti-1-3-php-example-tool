@@ -1,3 +1,6 @@
+/* Jon comment .. This is the legacy style sheet used by Martin when he wrote the game.php app. 
+Whilst we don't need to use this specific set of styles, we may develop a style to represent the Course Outlines in text. 
+*/
 body {
     font-family: 'Gugi', cursive;
 }
