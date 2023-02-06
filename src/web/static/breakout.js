@@ -1,3 +1,7 @@
+/* Jon comment ... we don't need this javascript which Martin used with his example.   However, we might need to convert course outlines from JSON later.
+That is the logic behind leaving it intact now just in case we need an example script to model from.
+*/
+
 var c = document.getElementById("breakout");
 var ctx = window.c.getContext("2d");
 
