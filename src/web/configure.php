@@ -4,7 +4,8 @@ require_once __DIR__ . '/../db/example_database.php';
 
 use \IMSGlobal\LTI;
 $launch = LTI\LTI_Message_Launch::from_cache($_REQUEST['launch_id'], new Example_Database());
-if (!$launch->is_deep_link_launch()) {
+/*  Jon commented out the following since no deep linking launch is necc for our simple use case. 
+   if (!$launch->is_deep_link_launch()) {
     throw new Exception("Must be a deep link!");
 }
 $resource = LTI\LTI_Deep_Link_Resource::new()
@@ -13,4 +14,5 @@ $resource = LTI\LTI_Deep_Link_Resource::new()
     ->set_title('Breakout ' . $_REQUEST['diff'] . ' mode!');
 $launch->get_deep_link()
     ->output_response_form([$resource]);
+*/
 ?>
