@@ -2,6 +2,6 @@ vendor
 composer.lock
 src/db/keys/*
 src/db/configs/local.json
-src/web/platform/services/ags/*.txt
+src/web/platform/services/ags/*
 .env
 .DS_Store
