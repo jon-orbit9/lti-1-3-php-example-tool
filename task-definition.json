@@ -1,0 +1,52 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "lab-container",
+            "image": "280785411786.dkr.ecr.ap-southeast-2.amazonaws.com/lti-tool-repo-1",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "lti-tool-lab-9001-tcp",
+                    "containerPort": 9001,
+                    "hostPort": 9001,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/docker-lab-task",
+                    "awslogs-region": "ap-southeast-2",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "family": "docker-lab-task",
+    "executionRoleArn": "arn:aws:iam::280785411786:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "placementConstraints": [],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "tags": [
+        {
+            "key": "ecs:taskDefinition:createdFrom",
+            "value": "ecs-console-v2"
+        }
+    ]
+}
