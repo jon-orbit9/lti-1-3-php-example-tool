@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "name": "lti-tool-lab",
+            "name": "lab-container",
             "image": "280785411786.dkr.ecr.ap-southeast-2.amazonaws.com/lti-tool-repo-1",
             "cpu": 0,
             "portMappings": [
