@@ -6,7 +6,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "lti-tool-lab-9001-tcp",
+                    "name": "lab-container-9001-tcp",
                     "containerPort": 9001,
                     "hostPort": 9001,
                     "protocol": "tcp",
